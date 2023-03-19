@@ -1,0 +1,16 @@
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023兔年大吉</title>
+  </head>
+  <body style="background-color: #B90000">
+    <button type="button" id="start" onclick="document.getElementById('musicStart').play();document.getElementById('start').hidden=true" style="border: white; border-style: solid; background: bottom; color: white; font-size: 300%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%)">进入页面</button>
+    <audio preload id="musicStart" onended="var vd = document.getElementById('vd');vd.play();vd.hidden = false">
+      <source src="./start.mp3" type="audio/mp3">
+    </audio>
+    <video preload hidden loop style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%" id="vd">
+      <source src="./video.mp4" type="video/mp4">
+    </video>
+  </body>
+</html>
