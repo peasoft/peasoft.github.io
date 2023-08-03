@@ -15,11 +15,11 @@ jobs:
           ruby-version: 2.7
       - run: bundle install
       - run: jekyll build
-      # - name: Copy statics
-      #   run: |
-      #     cd _postrepo
-      #     rm -rf .git .github .gitignore README.md
-      #     mv * ../_site/
+      - name: Copy statics
+        run: |
+          cd _postrepo
+          rm -rf .git .github .gitignore README.md
+          mv * ../_site/
       - uses: actions/upload-pages-artifact@v1.0.7
   deploy:
     needs: build
