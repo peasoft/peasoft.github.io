@@ -5,21 +5,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download theme
-        run: git clone https://github.com/peasoft/jekyll-theme-H2O-mod.git .
-      - name: Download posts
-        run: |
-          git clone https://github.com/peasoft/peasoft.github.io.git _postrepo
-          mv _postrepo/_posts/ .
+        uses: actions/checkout@v3
+        with:
+          repository: peasoft/jekyll-theme-H2O-mod
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          path: _repo
+      - run: mv -f _repo/* .
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7
       - run: bundle install
       - run: jekyll build
-      - name: Copy statics
-        run: |
-          cd _postrepo
-          rm -rf .git .github .gitignore README.md
-          mv * ../_site/
       - uses: actions/upload-pages-artifact@v1.0.7
   deploy:
     needs: build
