@@ -13,7 +13,7 @@ baseurl: ''
 # Navigation links
 nav:
   文章分类: '/tags.html'
-  免费节点: 'https://github.com/peasoft/NoMoreWalls'
+  免费节点: '/NWalls.html'
 
 # Footer
 footer:
