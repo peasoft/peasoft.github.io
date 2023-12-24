@@ -18,7 +18,7 @@ jobs:
           ruby-version: 2.7
       - run: bundle install
       - run: jekyll build
-      - uses: actions/upload-pages-artifact@v1.0.7
+      - uses: actions/upload-pages-artifact@v3
   deploy:
     needs: build
     permissions:
@@ -31,4 +31,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
