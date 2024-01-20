@@ -7,7 +7,7 @@ jobs:
       - name: Download theme
         uses: actions/checkout@v3
         with:
-          repository: peasoft/jekyll-theme-H2O-mod
+          repository: peasoft/jekyll-theme-H2O-plus
       - name: Checkout repo
         uses: actions/checkout@v3
         with:

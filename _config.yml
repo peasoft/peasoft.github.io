@@ -1,19 +1,24 @@
-# 配置站点
+# Site settings 配置站点
 title: 'Pea Soft 博客'
 description: '我会在这里发布我开发的一些小工具哦！'
 keyword: 'peasoft'
 url: 'https://peasoft.github.io' # your host
 
+# when build blog on server, if you don't need baseurl, you should leave this value blank.
 # 在服务器上建站时，如果你不需要子域名，请将这一格留空
+# if you're using GitHub Pages, set baseurl to your blog's .
 # 如果你在使用 GitHub Pages, 请将 baseurl 设置为你的网址的子域名
+# for example, if your site is "kaeyleo.github.io", then this url should leave blank.
 # 例如，当你的域名是 "kaeyleo.github.io"  时，这个 url 需要留空
+# but if your created a repo named "myblog", and the site is "kaeyleo.github.io/myblog", change baseurl to '/myblog'
 # 但是，如果你创建了一个叫 "myblog" 的网站，此时网址会变成 "kaeyleo.github.io/myblog" ，这时再将 baseurl 设置为 '/myblog'
 baseurl: ''
 
 # Navigation links
 nav:
-  文章分类: '/tags.html'
   免费节点: '/NWalls.html'
+  文章分类: '/tags.html'
+  搜索: '/s' # 注意：如果服务器不支持省略 '.html'，请将此项改为 '/s.html'
 
 # Footer
 footer:
@@ -70,12 +75,15 @@ highlighter: rouge
 kramdown:
   input: GFM
 
-# RSS
+# RSS 订阅
 RSS: true
 
-# Permalink
+# Permalink 文章链接
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
 permalink: /:year/:month/:day/:title.html
 
-# Plugins
+# Plugins 插件
 plugins: [jekyll-paginate]
+
+# Copyright 版权声明
+copyright: '如无特殊声明，本站所有文章均采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-NC-SA 4.0</a> 协议发布。'
