@@ -23,6 +23,9 @@ jobs:
         with:
           ruby-version: 3.2
           bundler-cache: true
+      - uses: actions/upload-artifact@v4
+        if: ${{ failure() }}
+        path: ./vendor
       # - run: bundle install
       - run: jekyll build
       - uses: actions/upload-pages-artifact@v3
