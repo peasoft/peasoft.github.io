@@ -1,7 +1,13 @@
 name: Publish GitHub Pages
 on: [push, workflow_dispatch]
 jobs:
-  build:
+  deploy:
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Download theme
@@ -15,20 +21,10 @@ jobs:
       - run: cp -rf _repo/* .
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
-      - run: bundle install
+          ruby-version: 3.2
+      - run: bundle install --jobs 4
       - run: jekyll build
       - uses: actions/upload-pages-artifact@v3
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
