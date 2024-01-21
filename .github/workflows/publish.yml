@@ -22,7 +22,8 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2
-      - run: bundle install --jobs 4
+          bundler-cache: true
+      # - run: bundle install
       - run: jekyll build
       - uses: actions/upload-pages-artifact@v3
       - name: Deploy to GitHub Pages
