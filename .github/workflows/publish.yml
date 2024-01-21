@@ -25,7 +25,8 @@ jobs:
           bundler-cache: true
       - uses: actions/upload-artifact@v4
         if: ${{ failure() }}
-        path: ./vendor
+        with:
+          path: ./vendor
       # - run: bundle install
       - run: jekyll build
       - uses: actions/upload-pages-artifact@v3
