@@ -19,7 +19,7 @@ jobs:
         with:
           path: _repo
       - run: cp -rf _repo/* .
-      - uses: ruby/setup-ruby@v1
+      - uses: peasoft/setup-ruby@master
         with:
           ruby-version: 3.2
           bundler-cache: true
