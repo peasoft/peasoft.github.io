@@ -26,6 +26,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           path: ./vendor
+      - run: export
       # - run: bundle install
       - run: jekyll build
       - uses: actions/upload-pages-artifact@v3
