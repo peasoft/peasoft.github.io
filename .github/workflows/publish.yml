@@ -11,24 +11,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download theme
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: peasoft/jekyll-theme-H2O-plus
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: _repo
       - run: cp -rf _repo/* .
-      - uses: peasoft/setup-ruby@vendor-path
+      - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2
           bundler-cache: true
-      - uses: actions/upload-artifact@v4
-        with:
-          path: ./vendor
-      - run: export
-      # - run: bundle install
-      - run: jekyll build
+      - run: bundle exec jekyll build
       - uses: actions/upload-pages-artifact@v3
       - name: Deploy to GitHub Pages
         id: deployment
