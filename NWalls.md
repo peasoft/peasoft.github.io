@@ -3,13 +3,17 @@ title: NoMoreWalls
 layout: info
 ---
 
-<p style="display: flex;">
 [![Fetch Status](https://github.com/peasoft/NoMoreWalls/actions/workflows/fetch.yml/badge.svg)](https://github.com/peasoft/NoMoreWalls/actions/workflows/fetch.yml) [![Stars](https://img.shields.io/github/stars/peasoft/NoMoreWalls?style=flat)](https://github.com/peasoft/NoMoreWalls/stargazers) [![Watchers](https://img.shields.io/github/watchers/peasoft/NoMoreWalls?style=flat)](https://github.com/peasoft/NoMoreWalls/watchers) [![Forks](https://img.shields.io/github/forks/peasoft/NoMoreWalls?style=flat)](https://github.com/peasoft/NoMoreWalls/forks) [![Vistors](https://visitor-badge.laobi.icu/badge?page_id=peasoft.NoMoreWalls)](https://github.com/peasoft/NoMoreWalls) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu) [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/peasoft/NoMoreWalls/blob/master/LICENSE.md)
-</p>
 
 这是本项目的防失联地址，记得收藏。
 
 ## 公告
+
+## 一级警报：Clash 死了！！！[最后的遗照](https://github.com/doreamon-design/clash)
+## 一级警报：Clash 死了！！！[最后的遗照](https://github.com/doreamon-design/clash)
+## 一级警报：Clash 死了！！！[最后的遗照](https://github.com/doreamon-design/clash)
+
+受此影响，MetaCubeX 团队宣布放弃 Clash.Meta，改入游戏行业并发布了第一款基于 YS 二开的游戏：[mihomo](https://github.com/MetaCubeX/mihomo)。我试过了，很好玩（
 
 ## 关于 Google Play 等服务在国内无法使用的解决方法
 
