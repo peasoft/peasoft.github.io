@@ -15,6 +15,8 @@ layout: info
 
 受此影响，MetaCubeX 团队宣布放弃 Clash.Meta，改入游戏行业并发布了第一款基于 YS 二开的游戏：[mihomo](https://github.com/MetaCubeX/mihomo)。我试过了，很好玩（
 
+为推动国产游戏(?)发展，本项目现已适配 mihomo 专用订阅，支持更多节点！详见下方 Clash 使用说明。
+
 ## 关于 Google Play 等服务在国内无法使用的解决方法
 
 ~~由于 Google 调整了服务器安排，将原有的国外服务器的**域名**调整到了国内专版，但是**服务器**还没跟上，导致 Google Play 等服务在国内连上的是**空域名**，直接不能用了。~~
@@ -55,7 +57,7 @@ layout: info
 - [KGithub](https://raw.kgithub.com/peasoft/NoMoreWalls/master/list.txt)
 - [KKGithub](https://raw.kkgithub.com/peasoft/NoMoreWalls/master/list.txt)
 
-或添加 Clash 订阅：
+或添加 Clash 订阅：（重磅：本项目同时提供 Meta 专用订阅，支持更多节点！要使用 Meta 专用订阅，请将链接最后的 `.yml` 替换成 `.meta.yml`）
 - [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml)
 - [JsDelivr 反代（zzko.cn）](https://cdn.jsdelivr.us/gh/peasoft/NoMoreWalls@master/list.yml)
 - [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.yml)
