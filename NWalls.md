@@ -24,14 +24,13 @@ layout: info
 根据一些来源，这可能是一个多年以前的历史遗留问题了，只不过以前高质量的节点可以避开这个问题，而现在节点质量的下降导致这个问题又出现了。当前的解决办法有：
 
 
-1. **把 V2Ray 和 Clash 都试一次**，部分高质量节点仅支持 V2Ray 或 Clash。Tip：对于 V2Ray，在 Play Store 开始下载软件后立即关掉 V2Ray，即可享受直连高速下载，下载完再把 V2Ray 打开。对于 Clash，使用本项目提供的**完整**订阅无需配置，自行配置的请看下一条。
+1. **使用 Clash Meta**，使用本项目提供的**完整**订阅无需配置，自行配置的请看下一条。
 2. **如果您使用的是本项目提供的 Rule Providers**，请在 `rules` 开头加上：
 ```yaml
   - DOMAIN-SUFFIX,googleapis.cn,🚀 选择代理
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google Play 国外/国内 服务器
-  - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT # Google Play 纯国内 服务器，尚未完成部署
+  - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT # Google Play 纯国内 服务器
 ```
-3. **自行寻找更好的机场**。
 
 如果此问题有进展，我们会在此更新，请及时关注。
 
@@ -45,6 +44,7 @@ layout: info
 
 添加 Base64 订阅：
 - [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
+- [GhProxy.cn](https://ghproxy.cn/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
 - [GhProxy.com](https://mirror.ghproxy.com/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
 
 以下链接可能不是最新：
@@ -54,11 +54,11 @@ layout: info
 - [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
 
 以下加速链接可能无效：
-- [KGithub](https://raw.kgithub.com/peasoft/NoMoreWalls/master/list.txt)
 - [KKGithub](https://raw.kkgithub.com/peasoft/NoMoreWalls/master/list.txt)
 
 或添加 Clash 订阅：（重磅：本项目同时提供 Meta 专用订阅，支持更多节点！要使用 Meta 专用订阅，请将链接最后的 `.yml` 替换成 `.meta.yml`。如果 Meta 提示解析错误，请**更新 Meta 至最新版本**！）
 - [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml)
+- [GhProxy.cn](https://ghproxy.cn/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml)
 - [GhProxy.com](https://mirror.ghproxy.com/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml)
 
 以下链接可能不是最新：
@@ -68,7 +68,6 @@ layout: info
 - [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.yml)
 
 以下加速链接可能无效：
-- [KGithub](https://raw.kgithub.com/peasoft/NoMoreWalls/master/list.yml)
 - [KKGithub](https://raw.kkgithub.com/peasoft/NoMoreWalls/master/list.yml)
 
 ## 免责声明

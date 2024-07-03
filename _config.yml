@@ -58,6 +58,7 @@ postPatterns: 'circuitBoard'
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
   github: 'https://github.com/peasoft'
+  bilibili: 'https://space.bilibili.com/3546690103544442'
   email: 'mailto:luliucheng100@outlook.com'
 
 # Tags 设置标签
