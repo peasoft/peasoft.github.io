@@ -18,7 +18,7 @@ tags: Android 破解 逆向 吾爱破解论坛
 
 ![代码文件结构](https://fastly.jsdelivr.net/gh/peasoft/picx-images-hosting@master/20230526/code_tree.5jmpgp86mb80.webp)
 
-从游戏的代码结构中可以看出：这个程序使用了某 SDK 来实现防沉迷检测。一般来说，**SDK 中有一个函数来判断能否进行游戏，游戏再根据这个函数的返回值选择进入或退出**。因此，第一种思路就是：**修改判定函数的返回值**。那么，我们怎样找到判定函数呢？我们可以参考 SDK 的开发文档：aHR0cHM6Ly9kZXZlbG9wZXIudGFwdGFwLmNvbS9kb2NzL3Nkay9hbnRpLWFkZGljdGlvbi9ndWlkZS8jJUU1JTlCJTlFJUU4JUIwJTgzJUU3JUIxJUJCJUU1JTlFJThC
+从游戏的代码结构中可以看出：这个程序使用了某 SDK 来实现防沉迷检测。一般来说，**SDK 中有一个函数来判断能否进行游戏，游戏再根据这个函数的返回值选择进入或退出**。因此，第一种思路就是：**修改判定函数的返回值**。那么，我们怎样找到判定函数呢？我们可以参考 SDK 的开发文档（**2024/07/23 更新**：此文档的 REST API 部分在更新后已被删除，可以科学使用 Web Archive 来查看）：aHR0cHM6Ly9kZXZlbG9wZXIudGFwdGFwLmNvbS9kb2NzL3Nkay9hbnRpLWFkZGljdGlvbi9ndWlkZS8jJUU1JTlCJTlFJUU4JUIwJTgzJUU3JUIxJUJCJUU1JTlFJThC
 
 在文档中，我们看到这个函数有多种回调状态码。因此，如果一个函数中同时包含了这几种状态码，这个函数应该就是判定函数。**我们在 JADX 中选择”导航“\-\>”搜索文本“，填入 `9002`。**
 
@@ -49,7 +49,7 @@ app = Flask(__name__)
 
 ~~运行 `go.bat`~~
 
-**2023/05/26更新**：不用创建 `go.bat`，只要在 `server.py` 的代码结尾加上：
+**2023/05/26 更新**：不用创建 `go.bat`，只要在 `server.py` 的代码结尾加上：
 
 ```python
 if __name__ == '__main__':
@@ -64,7 +64,7 @@ if __name__ == '__main__':
 {"success":true,"data":{"child_protected_config":{"share_time_switch":1,"use_time_switch":1,"no_identify_time":3600,"charge_amount_switch":1,"child_common_time":0,"child_holiday_time":3600,"night_strict_start":"21:00","night_strict_end":"20:00","night_strict_warn":1200,"remain_time_warn":2400,"upload_all_data":"0"},"name":<游戏名>,"upload_user_action":"1","ui_config":{"pay_limit_words":<"消费金额已达上限"提示文本>,"health_reminder_words":<"健康游戏"提示文本>,"auth_identify_words":<"实名认证"界面文本>},"register_config":{},"holiday":[<今年所有休息日的日期>]}}
 ```
 
-然后我们给服务器加3行代码（**2023/05/26更新**：以下所有代码均加在 `if __name__ == '__main__'` 前）：
+然后我们给服务器加3行代码（**2023/05/26 更新**：以下所有代码均加在 `if __name__ == '__main__'` 前）：
 
 ```python
 @app.route('/anti-addiction/v1/clients/<clientId>/configuration')
