@@ -17,4 +17,4 @@ layout: info
 
 这……真的只能靠自己的钞能力了。
 
-![微信打赏](./assets/img/pay3.jpg)
+![微信打赏](./assets/img/pay3.png)
