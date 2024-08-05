@@ -16,6 +16,7 @@ baseurl: ''
 
 # Navigation links
 nav:
+  捐赠: '/pay.html'
   免费节点: '/NWalls.html'
   文章分类: '/tags.html'
   搜索: '/s' # 注意：如果服务器不支持省略 '.html'，请将此项改为 '/s.html'
