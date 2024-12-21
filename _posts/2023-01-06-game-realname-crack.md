@@ -16,7 +16,7 @@ tags: Android 破解 逆向 吾爱破解论坛
 
 先在手机上下载好游戏，使用MT管理器**提取出 APK，传到电脑上**。为了反编译和阅读代码，我们**在电脑上打开 JADX，把传到电脑上的游戏 APK 文件拖入窗口**。
 
-![代码文件结构](https://fastly.jsdelivr.net/gh/peasoft/picx-images-hosting@master/20230526/code_tree.5jmpgp86mb80.webp)
+![代码文件结构](https://testingcf.jsdelivr.net/gh/peasoft/picx-images-hosting@master/20230526/code_tree.5jmpgp86mb80.webp)
 
 从游戏的代码结构中可以看出：这个程序使用了某 SDK 来实现防沉迷检测。一般来说，**SDK 中有一个函数来判断能否进行游戏，游戏再根据这个函数的返回值选择进入或退出**。因此，第一种思路就是：**修改判定函数的返回值**。那么，我们怎样找到判定函数呢？我们可以参考 SDK 的开发文档（**2024/07/23 更新**：此文档的 REST API 部分在更新后已被删除，可以科学使用 Web Archive 来查看）：aHR0cHM6Ly9kZXZlbG9wZXIudGFwdGFwLmNvbS9kb2NzL3Nkay9hbnRpLWFkZGljdGlvbi9ndWlkZS8jJUU1JTlCJTlFJUU4JUIwJTgzJUU3JUIxJUJCJUU1JTlFJThC
 
@@ -24,7 +24,7 @@ tags: Android 破解 逆向 吾爱破解论坛
 
 思考：为什么选择搜索`9002`？我们设想一下，假如判定函数可能给出的状态码有`1`和`9002`，搜索哪一个数有更大概率找到这个函数？应该选`9002`。`1`可以表示第1个变量(`v1`)、第1个寄存器(`p1`)等，在代码中**太常见**了，没有针对性。但是一个正常的函数不会含有`9002`个变量，这时`9002`肯定表示一个**特殊**的状态码。
 
-![代码搜索结果](https://fastly.jsdelivr.net/gh/peasoft/picx-images-hosting@master/20230526/code_search.18tckozo8g2o.webp)
+![代码搜索结果](https://testingcf.jsdelivr.net/gh/peasoft/picx-images-hosting@master/20230526/code_search.18tckozo8g2o.webp)
 
 我们可以找到好几条可疑代码，我已经在上图中框出来了。我们重点分析框中的第2条。程序的流程大致是这样的：**先判断实名认证是否成功**(`状态码==500`)，如果不成功则弹出错误信息；如果成功则**判断用户是不是成年人**(`currentUserAgeLimit()==18`)，是就开始游戏，否则执行其它验证(?)。我们可以在检查状态码前把状态码强行赋值成500，或者在进入函数后直接跳转到“开始游戏”。但可惜的是，这两种破解方法都失败了。
 
@@ -144,8 +144,12 @@ if __name__ == '__main__':
 
 最终的控制台日志截图：
 
-![控制台日志](https://fastly.jsdelivr.net/gh/peasoft/picx-images-hosting@master/20230526/server.e5rj3svz99c.webp)
+![控制台日志](https://testingcf.jsdelivr.net/gh/peasoft/picx-images-hosting@master/20230526/server.e5rj3svz99c.webp)
 
 # 4. 总结
 
 看完这篇文章，你或许已经能够破解使用同样的 SDK 制作的其它游戏了，因为本文针对的其实并不只是单独一款游戏，而是这个 SDK。但我并不希望一些熊孩子学会破解。顺便说一下，这种通过**把 API 调用转移到自己的服务器上并返回假信息**的方法被我自己称为模拟验证破解法，而这种思路还能用于破解登录限制，破解内购等一系列其它限制。欢迎大家分享自己的其它思路！
+
+## 2024 年的圣诞礼物？
+
+5oqKIGBodHRwczovL3Rkcy10YXBzZGsuY24udGFwYXBpcy5jb21gIOabv+aNouaIkCBgaHR0cHM6Ly9wZWFzb2Z0LnBhZ2VzLmRldmAg5bCx6KGM5LqG44CC
