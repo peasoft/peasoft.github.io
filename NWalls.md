@@ -15,19 +15,23 @@ layout: info
 
 这是本项目的防失联地址，记得收藏。
 
-警报：Clash 死了！[最后的遗照](https://github.com/doreamon-design/clash)
+没有节点怎么办？Windows 设备推荐使用 [SpaceTimee/Sheas-Cealer](https://github.com/SpaceTimee/Sheas-Cealer)，一键直连各种网站！
 
-受此影响，MetaCubeX 团队宣布放弃 Clash.Meta，改入游戏行业并发布了第一款基于 YS 二开的游戏：[mihomo](https://github.com/MetaCubeX/mihomo)。我试过了，很好玩（
+由于江苏电信、移动经常屏蔽未备案域名，本项目能自动识别屏蔽并分流，如果你仍然遇到跳转反诈中心，请将 `❓ 疑似国内` 切换为 `🚀 选择代理`。
 
-为推动国产游戏(?)发展，本项目现已适配 mihomo 专用订阅，支持更多节点！详见下方 Clash 使用说明。
+江苏移动在特定时段放行 `github.io` 和 `Cloudflare`，如不在特定时段请将 `🐟 漏网之鱼` 切换成 `🚀 选择代理`。
 
-## Google Play 下载服务器已调整
+本项目拒绝为**流氓资本家**提供任何服务！特别的，项目的许可证**严格禁止**实行 996 工作制的公司使用本项目！
 
-Google Play 的**国内**下载服务器已完成部署，国行机下载软件时可以不过代理直连，非国行机仍然走国外服务器但也可直连。下载时将 `🐟 漏网之鱼` 切换成 `DIRECT` 即可享受**直连**的快感！
+由于 [BootCDN/Staticfile 已被病毒公司收购](https://www.52pojie.cn/thread-1944970-1-1.html)，我们拦截了这些网站。
 
-如果此问题有变化，我们会在此更新，请及时关注。
+如果您访问部分网站时遇到问题，可以将 `病毒网站` 分类切换为 `DIRECT`，但是您需要**自行承担一切安全风险，包括但不限于广告骚扰，账号被盗，设备中毒**等，请三思而后行！！！
 
-我们新增了 `snippets` 文件夹来存放从 `list.yml` 中拆分出的配置片段，用于将本项目提供的一些配置整合到你自己的配置中。
+## Google Play 国内直连下载
+
+Google Play 在**上海**有**可直连的**下载服务器，国行机下载软件时可以不过代理直连，非国行机仍然走国外服务器。下载时将 `🐟 漏网之鱼` 切换成 `DIRECT` 即可享受**直连**的快感！
+
+我们新增了 `snippets` 文件夹来存放从 `list.meta.yml` 中拆分出的配置片段，用于将本项目提供的一些配置整合到你自己的配置中。
 
 此项目现已添加“反 996 许可证”，请各位使用者**不要违法违规要求别人加班，自觉遵守《中华人民共和国劳动法》及其它法律法规**！
 
@@ -38,30 +42,29 @@ Google Play 的**国内**下载服务器已完成部署，国行机下载软件�
 添加 Base64 订阅：
 - [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
 - [GhProxy.cn](https://ghproxy.cn/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
-- [GhProxy.com](https://mirror.ghproxy.com/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
+- [GhFast.top](https://ghfast.top/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
 
 以下链接可能不是最新：
-- [JsDelivr 反代（zzko.cn）](https://cdn.jsdelivr.us/gh/peasoft/NoMoreWalls@master/list.txt)
+- [GitHub.site](https://raw.github.site/peasoft/NoMoreWalls/master/list.txt)
+- [JsDelivr 默认 (当前 Fastly)](https://cdn.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
 - [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
 - [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
 - [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
 
-以下加速链接可能无效：
-- [KKGithub](https://raw.kkgithub.com/peasoft/NoMoreWalls/master/list.txt)
-
-或添加 Clash 订阅：（重磅：本项目同时提供 Meta 专用订阅，支持更多节点！要使用 Meta 专用订阅，**强烈建议将链接最后的 `.yml` 替换成 `.meta.yml`**。如果 Meta 提示解析错误，请**更新 Meta 至最新版本**！）
-- [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml)
-- [GhProxy.cn](https://ghproxy.cn/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml)
-- [GhProxy.com](https://mirror.ghproxy.com/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml)
+或添加 Clash Meta 订阅：（如果使用的是原版 Clash，请将链接最后的 `.meta.yml` 替换成 `.yml`。如果 Meta 提示解析错误，请**更新 Meta 至最新版本**！）
+- [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml)
+- [GhProxy.cn](https://ghproxy.cn/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml)
+- [GhFast.top](https://ghfast.top/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml)
 
 以下链接可能不是最新：
-- [JsDelivr 反代（zzko.cn）](https://cdn.jsdelivr.us/gh/peasoft/NoMoreWalls@master/list.yml)
-- [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.yml)
-- [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.yml)
-- [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.yml)
+- [GitHub.site](https://raw.github.site/peasoft/NoMoreWalls/master/list.meta.yml)
+- [JsDelivr 默认 (当前 Fastly)](https://cdn.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
+- [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
+- [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
+- [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml)
 
-以下加速链接可能无效：
-- [KKGithub](https://raw.kkgithub.com/peasoft/NoMoreWalls/master/list.yml)
+或添加 Sing-Box 订阅：（第三方提供转换，不支持本项目的节点选择）
+- [转换链接（第三方）](https://subapi.fxxk.dedyn.io/sub?target=singbox&url=https%3A%2F%2Fraw.githubusercontent.com%2Fpeasoft%2FNoMoreWalls%2Fmaster%2Fsnippets%2Fnodes.meta.yml&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Full_NoAuto.ini&tls13=true&emoji=true&list=false&xudp=true&udp=true&tfo=false&expand=true&scv=false&fdn=false&singbox.ipv6=1)
 
 ## 免责声明
 

@@ -3,6 +3,8 @@ title: 捐赠
 layout: info
 ---
 
+<style>img{max-height:60vh}</style>
+
 ## 支付宝
 
 **理论**上**不需要花一分钱**就能捐赠本站。
