@@ -4,7 +4,7 @@ title: '[全网首发] 批处理完全卸载 Windows？JustUninstall！'
 date: 2024-08-04
 categories: 视频
 tags: 视频 哔哩哔哩
-cover: 'https://peasoft.pages.dev/camo/https://i2.hdslb.com/bfs/archive/a3470bb3908ce835403b2940828e6fd516f92103.jpg'
+cover: 'https://7327638.xyz/camo/https://i2.hdslb.com/bfs/archive/a3470bb3908ce835403b2940828e6fd516f92103.jpg'
 ---
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112904053458947&bvid=BV1woiweFECb&cid=500001638270799&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
